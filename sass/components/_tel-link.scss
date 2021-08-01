@@ -1,0 +1,33 @@
+.tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-about);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--second-text-color);
+}
+.icon-contact {
+  margin-right: 10px;
+  fill: var(--text-about);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-link:hover .icon-contact,
+.mail-link:focus .icon-contact {
+  fill: var(--second-text-color);
+}
+.tel-link:hover .icon-contact,
+.tel-link:focus .icon-contact {
+  fill: var(--second-text-color);
+}

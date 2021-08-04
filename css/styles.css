@@ -212,7 +212,7 @@ img {
   fill: var(--second-text-color);
 }
 /*===========HERO========== */
-.hero-background {
+.hero {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
@@ -228,7 +228,7 @@ img {
     url('../images/hero/bg.jpg');
 }
 
-.main-title {
+.title {
   margin-top: 0;
   margin-bottom: 30px;
 

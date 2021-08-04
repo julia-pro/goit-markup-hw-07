@@ -1,4 +1,4 @@
-.hero-background {
+.hero {
     background-position: center;
     background-size: cover;
     max-width: 1600px;
@@ -14,7 +14,7 @@
       url('../images/hero/bg.jpg');
   }
   
-  .main-title {
+  .hero__title {
     margin-top: 0;
     margin-bottom: 30px;
   

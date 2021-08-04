@@ -11,9 +11,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  color: var(--second-text-color);
+   }
 }
 
-.mail-link:hover,
-.mail-link:focus {
-  color: var(--second-text-color);
-}

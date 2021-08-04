@@ -1,14 +1,14 @@
-.filters-list {
+.filtr__list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
   }
   
-  .item-filtr:not(:last-child) {
+  .filtr__item:not(:last-child):not(:last-child) {
     margin-right: 8px;
   }
   
-  .button-01 {
+  .filtr__button {
     padding: 6px 22px;
   
     background-color: #f5f4fa;
@@ -25,19 +25,21 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--second-title-color);
+    background-color: var(--second-text-color);
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12), 0px 1px 2px 0 rgba(0, 0, 0, 0.08),
+      0px 3px 1px 0 rgba(0, 0, 0, 0.1);
+     }
   }
+
   .active {
     background: var(--second-text-color);
     color: var(--second-title-color);
   }
-  .button-01:hover,
-  .button-01:focus {
-    color: var(--second-title-color);
-    background-color: var(--second-text-color);
-  
-    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12), 0px 1px 2px 0 rgba(0, 0, 0, 0.08),
-      0px 3px 1px 0 rgba(0, 0, 0, 0.1);
-  }
+ 
   .box {
     display: flex;
     flex-wrap: wrap;
@@ -64,10 +66,6 @@
     overflow: hidden;
   }
   
-  .box-img-link:hover .overlay,
-  .box-img-link:focus .overlay {
-    transform: translateY(0%);
-  }
   .overlay {
     position: absolute;
     top: 0;
@@ -84,7 +82,13 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .box-img-link:hover &,
+  .box-img-link:focus & {
+    transform: translateY(0%);
+    }
   }
+
   .shadow:hover,
   .shadow:focus {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),

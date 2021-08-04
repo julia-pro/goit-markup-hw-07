@@ -8,26 +8,28 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  color: var(--second-text-color);
+    }
 }
 
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--second-text-color);
-}
-.icon-contact {
+.mail-link__icon {
   margin-right: 10px;
   fill: var(--text-about);
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .mail-link__icon:hover &,
+  .mail-link__icon:focus & {
+  fill: var(--second-text-color);
+    }
+  .tel-link__icon:hover &,
+  .tel-link__icon:focus & {
+  fill: var(--second-text-color);
+    }
 }
 
-.mail-link:hover .icon-contact,
-.mail-link:focus .icon-contact {
-  fill: var(--second-text-color);
-}
-.tel-link:hover .icon-contact,
-.tel-link:focus .icon-contact {
-  fill: var(--second-text-color);
-}

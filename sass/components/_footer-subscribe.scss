@@ -28,11 +28,12 @@
   
     margin-right: 12px;
     padding: 15px 16px;
-  }
-  .subscribe-field::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    line-height: 1.25;
+    
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: 1.25;
+     }
   }
   .subscribe-button {
     padding: 10px 62px 10px 29px;
@@ -48,10 +49,11 @@
     cursor: pointer;
     transition: background-color, box-shadow, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
-  }
-  .subscribe-button:hover,
-  .subscribe-button:focus {
-    background-color: #188ce8;
+
+    &:hover,
+    &:focus {
+     background-color: #188ce8;
+    }
   }
   .subscribe-box-wrapper {
     position: relative;

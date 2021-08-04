@@ -13,25 +13,27 @@
     text-align: center;
     color: var(--title-color);
   }
-  .work-list {
+  .workplace__list {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc(-1 * var(--card-set-gap));
   }
-  .what-we-do-item {
+  .workplace__item {
+    
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-right: var(--card-set-gap);
   }
-  .what-we-do-item:not(:last-of-type) {
+  .workplace__list:not(:last-of-type) {
     margin-right: 30px;
   }
   .images {
-    display: block;
-  }
-  .work-pictures {
     position: relative;
   }
-  .pictures-title {
+  .images__icon {
+    display: block;
+  }
+
+  .images__title {
     position: absolute;
     bottom: 0;
     left: 0;
